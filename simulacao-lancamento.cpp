@@ -1,10 +1,9 @@
 #include <iostream>
-
 using namespace std;
 
-double posicao_inicial = 100; //Em metros
-double velocidade_inicial = 30; //Em metros por segundo
-double G = 9.81; 
+double posicao_inicial = 50; //Em metros
+double velocidade_inicial = 50; //Em metros por segundo
+double G = 9.81;
 double tempo; //Em segundos
 double posicao_atual;
 double velocidade_atual;
@@ -58,7 +57,7 @@ int main(){
     cout << "O tempo do pico do lancamento pela simulacao foi em " << pico_tempo << " segundos!\n\n";
 
     cout << "A altura do pico utilizando a equacao de Torricellieh eh de: " << pico_torricelli << " metros\n";
-    cout << "O tempo do pico do lancamento pelo torricelli foi em " << tempo_pico_torricelli << "segundos\n\n";
+    cout << "O tempo do pico do lancamento pelo torricelli foi em " << tempo_pico_torricelli << " segundos\n\n";
 
     cout << "Erro da simulacao:\n";
     cout << "Metros: " << abs(pico_torricelli - pico_altura) << "\n";
